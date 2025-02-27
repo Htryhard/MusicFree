@@ -82,6 +82,7 @@ tmp/
 scripts/
 
 *.log
+package-lock.json
 # Expo
 .expo
 dist/

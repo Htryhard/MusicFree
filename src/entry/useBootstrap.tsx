@@ -1,13 +1,13 @@
 import Config from "@/core/config.ts";
 import Theme from "@/core/theme";
-import useCheckUpdate from "@/hooks/useCheckUpdate.ts";
 import { useListenOrientationChange } from "@/hooks/useOrientation";
 import { useEffect } from "react";
 import { useColorScheme } from "react-native";
 
 export function BootstrapComp() {
     useListenOrientationChange();
-    useCheckUpdate();
+    // 每次打開都檢查更新
+    // useCheckUpdate();
 
     const followSystem = Config.useConfigValue('theme.followSystem');
 
